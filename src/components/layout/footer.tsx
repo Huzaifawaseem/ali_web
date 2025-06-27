@@ -65,7 +65,7 @@ export function Footer() {
             </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Zenith Serenity. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Royal Massage Spa. All rights reserved.</p>
         </div>
       </div>
     </footer>

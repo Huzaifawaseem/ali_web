@@ -143,7 +143,7 @@ export default function SettingsAdminPage() {
            <CardContent className="space-y-6">
              <div className="space-y-2">
                 <Label htmlFor="siteName">Site Name</Label>
-                <Input id="siteName" value={contactInfo.siteName || ''} onChange={handleChange} placeholder="e.g., Zenith Serenity" />
+                <Input id="siteName" value={contactInfo.siteName || ''} onChange={handleChange} placeholder="e.g., Royal Massage Spa" />
             </div>
             <div className="space-y-2">
                 <Label htmlFor="logo">Logo</Label>

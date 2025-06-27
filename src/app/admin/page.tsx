@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Package, Users, Settings, Image as ImageIcon } from "lucide-react";
+import { Package, Users, Settings, Image as ImageIcon, Briefcase } from "lucide-react";
 import Link from "next/link";
 
 
@@ -32,6 +32,18 @@ export default function AdminDashboard() {
                     <CardContent>
                         <div className="text-2xl font-bold">Therapists</div>
                         <p className="text-xs text-muted-foreground">Add or remove therapist profiles.</p>
+                    </CardContent>
+                </Card>
+            </Link>
+            <Link href="/admin/staff">
+                <Card className="hover:border-primary transition-colors">
+                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                        <CardTitle className="text-sm font-medium">Manage Staff</CardTitle>
+                        <Briefcase className="h-4 w-4 text-muted-foreground" />
+                    </CardHeader>
+                    <CardContent>
+                        <div className="text-2xl font-bold">Staff</div>
+                        <p className="text-xs text-muted-foreground">Add or remove staff images.</p>
                     </CardContent>
                 </Card>
             </Link>

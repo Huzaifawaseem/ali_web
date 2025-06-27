@@ -35,3 +35,10 @@ export interface Room {
   imageUrl: string;
   imagePublicId?: string;
 }
+
+export interface Staff {
+  id: string;
+  name: string;
+  imageUrl: string;
+  imagePublicId?: string;
+}

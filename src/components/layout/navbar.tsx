@@ -9,6 +9,7 @@ import { AuthButtons } from '@/components/auth-buttons';
 const navLinks = [
   { href: '#packages', label: 'Packages' },
   { href: '#therapists', label: 'Therapists' },
+  { href: '/staff', label: 'Our Staff' },
   { href: '#rooms', label: 'Our Rooms' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -24,7 +25,7 @@ export function Navbar() {
       <nav className="flex items-center gap-6 text-sm font-medium">
         {navLinks.map((link) => (
           <Link
-            key={link.href}
+            key={link.label}
             href={link.href}
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
@@ -49,7 +50,7 @@ export function Navbar() {
             <nav className="mt-8 grid gap-4">
               {navLinks.map((link) => (
                 <Link
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   className="text-lg font-medium transition-colors hover:text-foreground/80 text-foreground/60"
                 >

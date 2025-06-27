@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Logo } from '../logo';
-import { LayoutDashboard, Package, Users, LogOut, Settings, Image as ImageIcon } from 'lucide-react';
+import { LayoutDashboard, Package, Users, LogOut, Settings, Image as ImageIcon, Briefcase } from 'lucide-react';
 import { getAuth, signOut } from 'firebase/auth';
 import { app } from '@/lib/firebase/clientApp';
 import { useToast } from '@/hooks/use-toast';
@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/packages', label: 'Packages', icon: Package },
   { href: '/admin/therapists', label: 'Therapists', icon: Users },
+  { href: '/admin/staff', label: 'Staff', icon: Briefcase },
   { href: '/admin/rooms', label: 'Rooms', icon: ImageIcon },
   { href: '/admin/settings', label: 'Settings', icon: Settings },
 ];

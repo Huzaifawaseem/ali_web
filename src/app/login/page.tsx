@@ -87,7 +87,7 @@ export default function LoginPage() {
           <CardHeader className="text-center">
             <CardTitle className="font-headline text-2xl">Login</CardTitle>
             <CardDescription>
-              Welcome back to Zenith Serenity.
+              Welcome back to Royal Massage Spa.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">

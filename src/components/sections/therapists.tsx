@@ -8,6 +8,8 @@ import { ref, onValue } from 'firebase/database';
 import type { Therapist } from '@/lib/types';
 import { Skeleton } from '../ui/skeleton';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export function Therapists() {
   const [therapists, setTherapists] = useState<Therapist[]>([]);
@@ -92,6 +94,11 @@ export function Therapists() {
           ) : (
             <p className="col-span-full text-center text-muted-foreground">No therapists available at the moment. Please check back later.</p>
           )}
+        </div>
+        <div className="mt-12 text-center">
+          <Button asChild size="lg">
+            <Link href="/staff">See Our More Professional Staff</Link>
+          </Button>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ import { Skeleton } from './ui/skeleton';
 
 export function Logo({ className }: { className?: string }) {
   const [logoUrl, setLogoUrl] = useState<string | null>(null);
-  const [siteName, setSiteName] = useState<string>('Zenith Serenity');
+  const [siteName, setSiteName] = useState<string>('Royal Massage Spa');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export function Logo({ className }: { className?: string }) {
       const data: ContactInfo | null = snapshot.val();
       if (data) {
         setLogoUrl(data.logoUrl || null);
-        setSiteName(data.siteName || 'Zenith Serenity');
+        setSiteName(data.siteName || 'Royal Massage Spa');
       }
       setLoading(false);
     });
